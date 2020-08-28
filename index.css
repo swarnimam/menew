@@ -1,0 +1,127 @@
+body,html{
+    width: 100%;
+    height: 100%;
+  }
+.navbar-details{
+   width: 100%;
+    background: #29023E;
+}
+.img-size{
+  width: 172.26px;
+height: 30px;
+}
+.text-nav{
+    color: #FFFFFF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    
+    
+}
+.header-img{
+  height: 22px;
+  width :129px;
+  
+}
+.jumbo-add{
+   
+background: radial-gradient(50% 733.89% at 50% 52.19%, #29023E 0%, #3B0059 100%);
+/* DropShadow */
+
+box-shadow: 0px 16px 32px rgba(221, 230, 237, 0.04);
+border-radius: 12px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+.map{
+    height: 400px;
+    background: #C4C4C4;
+    /* DropShadow */
+    
+    box-shadow: 0px 16px 32px rgba(221, 230, 237, 0.04);
+    border-radius: 12px;
+}
+.table-box{
+    
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #FFFFFF;
+    /* DropShadow */
+    
+    box-shadow: 0px 16px 32px rgba(8, 8, 8, 0.04);
+    border-radius: 12px;
+}
+.table-heading{
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 54px;
+    padding-top: 30px;
+    color: #000000;
+    
+
+}
+
+.zone:hover{
+    border-bottom: 2px solid #0275d8;
+   
+}
+.nav-item.active{
+  border-bottom: 2px solid #0275d8;
+}
+.font-variation{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 54px ;
+    color: #121212;  
+}
+.nav-font{
+font-size: 20px;
+font-weight: bold;
+}
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    .font-variation {font-size: 16px;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    .font-variation {font-size: 20px;}
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .font-variation {font-size: 20px;}
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .font-variation {font-size: 20px;}
+  }
+
+.zone-line{
+    margin-left: 300px;
+}
+
+.footer{
+
+width: 100%;
+padding-bottom: 30px;
+background: linear-gradient(94.73deg, #29023E 0%, #3B0059 100%);
+font-family: Inter;
+font-size: 18px;
+line-height: 28px;
+}
+.footer-img{
+  width: 280px;
+height: 49px;
+}
+
