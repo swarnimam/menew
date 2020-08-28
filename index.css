@@ -68,7 +68,24 @@ border-radius: 12px;
     
 
 }
+@media (min-width: 544px) {  
+  .table-variation {margin-left: 0px;}
+}
 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+  .table-variation {margin-left:  300px;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .table-variation {margin-left:  300px;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .table-variation {margin-left:  300px;}
+}
 .zone:hover{
     border-bottom: 2px solid #0275d8;
    
@@ -107,9 +124,6 @@ font-weight: bold;
     .font-variation {font-size: 20px;}
   }
 
-.zone-line{
-    margin-left: 300px;
-}
 
 .footer{
 
