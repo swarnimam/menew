@@ -10,6 +10,9 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
         <title>menew</title>
     </head>
     <body>
@@ -44,10 +47,40 @@
            <div class="row">
             <div class=" col-12">
                 <div class="embed-responsive embed-responsive-21by9">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=13dj3qPDd6zMRK8u1uXXHn9zibCZddxV8&hl=en" class="embed-responsive-item" ></iframe>
+                    <div id="map" class="embed-responsive-item"></div>
                 </div>
                 </div>
            </div>
+           
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1Ijoic2FtaGl0YXZldGNoYSIsImEiOiJja2Y1aWxrOHcwMXo2MnNyNDUzcTFubTk5In0.dAAMt0kK0PxBXRkHQgbo1g';
+            var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [77.1025,28.7041 ], // starting position(long,lat)
+            zoom: 3 // starting zoom
+            });
+            //(long,lat)
+            var points=[
+            [77.1025,28.7041 ],
+            [-74.5, 42]
+            ];
+            
+            for(var i=0;i<points.length;i++){
+                    var marker = new mapboxgl.Marker()
+            .setLngLat(points[i])
+            .addTo(map);
+            }
+            // Add geolocate control to the map.
+            map.addControl(
+            new mapboxgl.GeolocateControl({
+            positionOptions: {
+            enableHighAccuracy: true
+            },
+            trackUserLocation: true
+            })
+            );
+            </script>
             <div class="table-box mt-4 col-12">
                 <div class="container">
                         <div class="table-heading text-center ">Explore By <span style="color: 06BF5B;" >Region</span></div>
